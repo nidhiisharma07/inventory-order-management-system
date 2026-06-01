@@ -1,7 +1,7 @@
 import axios from "axios";
 import { clearToken, getToken } from "../utils/authStorage";
 
-const API_URL = import.meta.env.https://inventory-backend-xw28.onrender.com;
+const API_URL = import.meta.env.VITE_API_URL;
 const REQUEST_TIMEOUT_MS = Number(import.meta.env.VITE_API_TIMEOUT_MS || 15000);
 const MAX_RETRIES = Number(import.meta.env.VITE_API_MAX_RETRIES || 2);
 
